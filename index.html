@@ -10,43 +10,61 @@
     <div class="slider-container">
       <div class="slider">
         <div class="slider__memes">
-          <img
-            class="meme"
-            width="600"
-            hight="400"
-            src="./assets/img/memes/meme1.png"
-            alt="meme"
+          <input
+            class="slider__radio"
+            type="radio"
+            name="meme-radio"
+            id="r1"
+            checked
           />
-          <img
-            class="meme"
-            width="600"
-            hight="400"
-            src="./assets/img/memes/meme2.png"
-            alt="meme"
-          />
-          <img
-            class="meme"
-            width="600"
-            hight="400"
-            src="./assets/img/memes/meme3.png"
-            alt="meme"
-          />
-          <img
-            class="meme"
-            width="600"
-            hight="400"
-            src="./assets/img/memes/meme4.png"
-            alt="meme"
-          />
+          <input class="slider__radio" type="radio" name="meme-radio" id="r2" />
+          <input class="slider__radio" type="radio" name="meme-radio" id="r3" />
+          <input class="slider__radio" type="radio" name="meme-radio" id="r4" />
+          <div class="meme">
+            <img
+              class="meme__img"
+              width="600"
+              hight="400"
+              src="./assets/img/memes/meme1.png"
+              alt="meme"
+            />
+            <p class="slider__meme-text">Text</p>
+          </div>
+          <div class="meme">
+            <img
+              class="meme__img"
+              width="600"
+              hight="400"
+              src="./assets/img/memes/meme2.png"
+              alt="meme"
+            />
+            <p class="slider__meme-text">Text</p>
+          </div>
+          <div class="meme">
+            <img
+              class="meme__img"
+              width="600"
+              hight="400"
+              src="./assets/img/memes/meme3.png"
+              alt="meme"
+            />
+            <p class="slider__meme-text">Text</p>
+          </div>
+          <div class="meme">
+            <img
+              class="meme__img"
+              width="600"
+              hight="400"
+              src="./assets/img/memes/meme4.png"
+              alt="meme"
+            />
+            <p class="slider__meme-text">Text</p>
+          </div>
         </div>
         <div class="slider__labels">
-          <input class="slider__radio" type="radio" name="meme-radio" id="r1" checked />
           <label class="slider__label" for="r1" id="label1"></label>
-          <input class="slider__radio" type="radio" name="meme-radio" id="r2" />
           <label class="slider__label" for="r2"></label>
-          <input class="slider__radio" type="radio" name="meme-radio" id="r3" />
           <label class="slider__label" for="r3"></label>
-          <input class="slider__radio" type="radio" name="meme-radio" id="r4" />
           <label class="slider__label" for="r4"></label>
         </div>
       </div>
