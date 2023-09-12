@@ -1,5 +1,60 @@
-*{
+* {
   padding: 0;
   margin: 0;
   border: none;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.slider__memes {
+  display: flex;
+  overflow-x: hidden;
+  width: 600px;
+}
+
+.meme {
+  width: 100%;
+}
+
+.slider__labels {
+  display: flex;
+  gap: 1rem;
+}
+
+.slider__label {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid rgb(12, 206, 236);
+  border-radius: 0.8rem;
+}
+
+.slider__label:hover {
+  background-color: rgb(12, 206, 236);
+  cursor: pointer;
+}
+
+.slider__radio{
+  display: none;
+}
+
+.slider__radio[type="radio"]:checked + label {
+    background-color: rgb(12, 206, 236);
+}
+
+#r1:checked ~ .meme{
+  transform: translateX(0%);
+}
+
+#r2:checked ~ .meme{
+  transform: translateX(-100%);
+}
+
+#r3:checked ~ .meme{
+  transform: translateX(-200%);
 }

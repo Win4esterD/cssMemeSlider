@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Mem Slider</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Mem Slider</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slider__memes">
+          <img
+            class="meme"
+            width="600"
+            hight="400"
+            src="./assets/img/memes/meme1.png"
+            alt="meme"
+          />
+          <img
+            class="meme"
+            width="600"
+            hight="400"
+            src="./assets/img/memes/meme2.png"
+            alt="meme"
+          />
+          <img
+            class="meme"
+            width="600"
+            hight="400"
+            src="./assets/img/memes/meme3.png"
+            alt="meme"
+          />
+          <img
+            class="meme"
+            width="600"
+            hight="400"
+            src="./assets/img/memes/meme4.png"
+            alt="meme"
+          />
+        </div>
+        <div class="slider__labels">
+          <input class="slider__radio" type="radio" name="meme-radio" id="r1" checked />
+          <label class="slider__label" for="r1" id="label1"></label>
+          <input class="slider__radio" type="radio" name="meme-radio" id="r2" />
+          <label class="slider__label" for="r2"></label>
+          <input class="slider__radio" type="radio" name="meme-radio" id="r3" />
+          <label class="slider__label" for="r3"></label>
+          <input class="slider__radio" type="radio" name="meme-radio" id="r4" />
+          <label class="slider__label" for="r4"></label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
