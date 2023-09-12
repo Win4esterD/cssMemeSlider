@@ -15,7 +15,7 @@
 .slider__memes {
   display: flex;
   overflow-x: hidden;
-  width: 600px;
+  width: 37.5rem;;
 }
 
 .meme {
@@ -30,8 +30,9 @@
 .slider__label {
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid rgb(12, 206, 236);
+  border: 0.0625rem solid rgb(12, 206, 236);
   border-radius: 0.8rem;
+  display: block;
 }
 
 .slider__label:hover {
@@ -62,10 +63,7 @@
 
 .meme__img {
   height: 90%;
-}
-
-.slider__meme-text{
-  text-align: center;
+  width: 37.5rem;
 }
 
 #r1:checked ~ .meme {
