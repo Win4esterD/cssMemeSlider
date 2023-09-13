@@ -15,11 +15,12 @@
 .slider__memes {
   display: flex;
   overflow-x: hidden;
-  width: 37.5rem;;
+  width: 37.5rem;
+  max-width: 100%;
 }
 
-.meme {
-  width: 100%;
+.slider__meme-text{
+  padding-left: 1.5rem;
 }
 
 .slider__labels {
@@ -54,16 +55,10 @@
   display: none;
 }
 
-.slider__radio[type="radio"]:checked + label {
-  background-color: rgb(12, 206, 236);
-}
-
-#r2:checked + label ~ #label2 {
-  background-color: black;
-}
 
 .meme {
   transition: transform 0.7s;
+  width: 100%;
 }
 
 .meme__img {
