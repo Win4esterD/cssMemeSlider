@@ -18,6 +18,14 @@
   width: 37.5rem;;
 }
 
+.slider__memes > #r1:checked ~ .slider__labels > #label1{
+  background-color: black;
+}
+
+#r2:checked #label2{
+  background-color: black;
+}
+
 .meme {
   width: 100%;
 }
@@ -25,6 +33,11 @@
 .slider__labels {
   display: flex;
   gap: 1rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 12rem;
 }
 
 .slider__label {
@@ -41,8 +54,8 @@
 }
 
 .slider__label:active {
-  background-color: blueviolet;
-  border-color: blueviolet;
+  background-color: orange;
+  border-color: orange;
 }
 
 .slider__radio {
