@@ -73,7 +73,7 @@
 .slider__meme-text{
   transition: transform .7s;
   width: 5rem;
-  padding: 0 1rem;
+  padding: 0 1.1rem;
 }
 
 
@@ -123,5 +123,5 @@
 }
 
 #r4:checked ~ .slider > .slider__controls-and-text > .slider__meme-text-blocks > .slider__meme-text{
-  transform: translateX(-420%);
+  transform: translateX(-410%);
 }

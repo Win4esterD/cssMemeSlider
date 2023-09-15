@@ -1,35 +1,9 @@
-@media (max-width: 600px){
-
-  .slider__memes{
-    width: 31.25rem;
+@media (max-width: 599px){
+  .slider__controls-and-text{
+    flex-direction: column-reverse;
   }
-  
-  .meme__img{
-    width: 31.25rem;
-  }
-}
-
-@media (max-width: 500px){
-  .slider__memes{
-    width: 23rem;
-  }
-  
-  .meme__img{
-    width: 23rem;
-  }
-
-  .slider__label{
-    width: 0.9rem;
-    height: 0.9rem;
-  }
-}
-
-@media (max-width: 370px){
-  .slider__memes{
-    width: 20rem;
-  }
-  
-  .meme__img{
-    width: 20rem;
+  .slider__labels{
+    justify-self: center;
+    align-self: center;
   }
 }
