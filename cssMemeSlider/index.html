@@ -5,56 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Mem Slider</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/adaptive.css" />
+    <!-- <link rel="stylesheet" href="./styles/adaptive.css" /> -->
   </head>
   <body>
     <div class="slider-container">
-      <input  class="slider__radio"  type="radio"  name="meme-radio"  id="r1"  checked/>
+      <input
+        class="slider__radio"
+        type="radio"
+        name="meme-radio"
+        id="r1"
+        checked
+      />
       <input class="slider__radio" type="radio" name="meme-radio" id="r2" />
       <input class="slider__radio" type="radio" name="meme-radio" id="r3" />
       <input class="slider__radio" type="radio" name="meme-radio" id="r4" />
       <div class="slider">
         <div class="slider__memes">
-          <div class="meme">
-            <img
-              class="meme__img"
-              src="./assets/img/memes/meme1.png"
-              alt="meme"
-            />
-            <p class="slider__meme-text">Programming is easy?</p>
-          </div>
-          <div class="meme">
-            <img
-              class="meme__img"
-              src="./assets/img/memes/meme2.png"
-              alt="meme"
-            />
-            <p class="slider__meme-text">When you finally have it.</p>
-          </div>
-          <div class="meme">
-            <img
-              class="meme__img"
-              src="./assets/img/memes/meme3.png"
-              alt="meme"
-            />
-            <p class="slider__meme-text">
-              No scripts means no bugs, brilliant task.
-            </p>
-          </div>
-          <div class="meme">
-            <img
-              class="meme__img"
-              src="./assets/img/memes/meme4.png"
-              alt="meme"
-            />
-            <p class="slider__meme-text">Tell me why we need binary trees.</p>
-          </div>
+          <img
+            class="slider__meme"
+            src="./assets/img/memes/meme1.png"
+            alt="meme"
+          />
+          <img
+            class="slider__meme"
+            src="./assets/img/memes/meme2.png"
+            alt="meme"
+          />
+          <img
+            class="slider__meme"
+            src="./assets/img/memes/meme3.png"
+            alt="meme"
+          />
+          <img
+            class="slider__meme"
+            src="./assets/img/memes/meme4.png"
+            alt="meme"
+          />
         </div>
-        <div class="slider__labels">
-          <label class="slider__label" for="r1" id="label1"></label>
-          <label class="slider__label" for="r2" id="label2"></label>
-          <label class="slider__label" for="r3" id="label3"></label>
-          <label class="slider__label" for="r4" id="label4"></label>
+        <div class="slider__controls-and-text">
+          <div class="slider__meme-text-blocks">
+            <p class="slider__meme-text">Programming is easy?</p>
+            <p class="slider__meme-text">I love programming!</p>
+            <p class="slider__meme-text">No scripts here!</p>
+            <p class="slider__meme-text">I hate binary trees!</p>
+          </div>
+          <div class="slider__labels">
+            <label class="slider__label" for="r1" id="label1"></label>
+            <label class="slider__label" for="r2" id="label2"></label>
+            <label class="slider__label" for="r3" id="label3"></label>
+            <label class="slider__label" for="r4" id="label4"></label>
+          </div>
         </div>
       </div>
     </div>

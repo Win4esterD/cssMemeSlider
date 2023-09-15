@@ -19,10 +19,6 @@
   max-width: 100%;
 }
 
-.slider__meme-text{
-  padding-left: 1.5rem;
-}
-
 .slider__labels {
   display: flex;
   gap: 1rem;
@@ -34,8 +30,8 @@
 }
 
 .slider__label {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 0.9rem;
+  height: 0.9rem;
   border: 0.0625rem solid rgb(12, 206, 236);
   border-radius: 0.8rem;
   display: block;
@@ -56,44 +52,76 @@
 }
 
 
-.meme {
+.slider__meme {
   transition: transform 0.7s;
   width: 100%;
 }
 
-.meme__img {
-  height: 90%;
+.slider__controls-and-text{
+  display: flex;
+  justify-content: space-between;
   width: 37.5rem;
+  max-width: 100%;
 }
 
-#r1:checked ~ .slider > .slider__memes> .meme {
+.slider__meme-text-blocks{
+  display: flex;
+  overflow-x: hidden;
+  width: 7rem;
+}
+
+.slider__meme-text{
+  transition: transform .7s;
+  width: 5rem;
+  padding: 0 1rem;
+}
+
+
+#r1:checked ~ .slider >  .slider__memes> .slider__meme {
   transform: translateX(0%);
 }
 
-#r2:checked ~ .slider > .slider__memes> .meme {
+#r2:checked ~ .slider >  .slider__memes> .slider__meme {
   transform: translateX(-100%);
 }
 
-#r3:checked ~ .slider > .slider__memes> .meme {
+#r3:checked ~ .slider >  .slider__memes> .slider__meme {
   transform: translateX(-200%);
 }
 
-#r4:checked ~ .slider > .slider__memes> .meme {
+#r4:checked ~ .slider >  .slider__memes> .slider__meme {
   transform: translateX(-300%);
 }
 
-#r1:checked ~ .slider > .slider__labels > #label1{
+#r1:checked ~ .slider > .slider__controls-and-text > .slider__labels > #label1{
   background-color:rgb(12, 206, 236)
 }
 
-#r2:checked ~ .slider > .slider__labels > #label2{
+#r2:checked ~ .slider > .slider__controls-and-text > .slider__labels > #label2{
   background-color:rgb(12, 206, 236)
 }
 
-#r3:checked ~ .slider > .slider__labels > #label3{
+#r3:checked ~ .slider > .slider__controls-and-text > .slider__labels > #label3{
   background-color:rgb(12, 206, 236)
 }
 
-#r4:checked ~ .slider > .slider__labels > #label4{
+#r4:checked ~ .slider > .slider__controls-and-text > .slider__labels > #label4{
   background-color:rgb(12, 206, 236)
+}
+
+#r1:checked ~ .slider > .slider__controls-and-text > .slider__meme-text-blocks > .slider__meme-text{
+  transform: translateX(0%);
+}
+
+#r2:checked ~ .slider > .slider__controls-and-text > .slider__meme-text-blocks > .slider__meme-text{
+  transform: translateX(-100%);
+}
+
+#r3:checked ~ .slider > .slider__controls-and-text > .slider__meme-text-blocks > .slider__meme-text{
+  transform: translateX(-270%);
+  padding-right: 3rem;
+}
+
+#r4:checked ~ .slider > .slider__controls-and-text > .slider__meme-text-blocks > .slider__meme-text{
+  transform: translateX(-420%);
 }
