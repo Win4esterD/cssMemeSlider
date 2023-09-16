@@ -19,6 +19,12 @@
   max-width: 100%;
 }
 
+/* @-moz-document url-prefix() {
+  .slider__memes{
+    overflow-x: auto;
+  }
+} */
+
 .slider__labels {
   display: flex;
   /* gap: 1rem; */
@@ -66,7 +72,8 @@
 
 .slider__meme {
   transition: transform 0.7s;
-  width: 100%;
+  width: 37.5rem;
+  max-width: 100%;
 }
 
 .slider__controls-and-text{
