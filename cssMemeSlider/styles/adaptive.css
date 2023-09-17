@@ -1,0 +1,9 @@
+@media (max-width: 599px){
+  .slider__controls-and-text{
+    flex-direction: column-reverse;
+  }
+  .slider__labels{
+    justify-self: center;
+    align-self: center;
+  }
+}
