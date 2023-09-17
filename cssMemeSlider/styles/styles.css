@@ -27,7 +27,6 @@
 
 .slider__labels {
   display: flex;
-  /* gap: 1rem; */
   cursor: pointer;
   justify-content: center;
   align-items: center;
@@ -46,6 +45,15 @@
 
 .slider__label:hover {
   cursor: pointer;
+}
+
+.slider__label:hover > .slider__pint{
+  background-color: rgb(12, 206, 236);
+}
+
+.slider__label:active > .slider__pint{
+  background-color: orange;
+  border-color: orange;
 }
 
 .slider__pint{
